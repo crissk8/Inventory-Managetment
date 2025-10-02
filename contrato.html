@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contrato del Servicio de Software</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="checkbox"],
+    input[type="submit"] {
+      width: calc(100% - 12px);
+      padding: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #ccc;
+    }
+  </style>
+  <script>
+    function abrirContrato() {
+      window.open("https://www.dropbox.com/scl/fi/w93e67bd00lwmpy527k0b/Contrato-de-Licencia-de-Software.pdf?rlkey=k2ifq14g54weutu2efqea5b39&dl=0", "_blank");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Contrato del Servicio de Software</h1>
+    <form method="POST" onsubmit="abrirContrato();">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="empresa">Nombre de la Empresa:</label>
+      <input type="text" id="empresa" name="empresa" required>
+
+      <label for="terminos">Términos y Condiciones:</label>
+      <iframe srcdoc="
+      <html>
+        <body>
+          <p>El producto software solo podrá ser adquirido mediante una licencia de tiempo, y no podrá ser comprado por tiempo indefinido, a continuación, se presenta las características de la licencia de tiempo del producto software:</p>
+          <ul>
+            <li>Licencia por tiempo limitado: Los usuarios adquieren el derecho de utilizar el software durante un período específico, ya sea mensual o anual.</li>
+            <li>Suscripción mensual o anual: Se ofrece diferentes planes de suscripción, con precios variados dependiendo de la duración del contrato. Se ofrece un precio más bajo por una suscripción anual en comparación con una mensual.</li>
+            <li>Renovación automática: Se incluye la opción de renovación automática al final del período contratado, a menos que el cliente cancele explícitamente la suscripción.</li>
+            <li>Actualizaciones y soporte técnico: La licencia incluirá actualizaciones gratuitas durante el período de suscripción. También, el soporte técnico estará disponible y la asistencia proporcionada será las 24/7.</li>
+            <li>Restricciones de uso: Se Establece los términos y condiciones para el uso del software, que en este caso la licencia permitirá 3 dispositivos como la cantidad máxima a instalar por licencia contratada.</li>
+            <li>Personalización y escalabilidad: También se ofrece opciones para personalizar el software según las necesidades del cliente y permitir actualizaciones a planes más amplios con características adicionales.</li>
+            <li>Gestión de acceso y control: Proporciona herramientas para administrar las cuentas de usuario, roles y permisos dentro del software.</li>
+            <li>Flexibilidad en la cancelación: Se ofrece a los usuarios la posibilidad de cancelar su suscripción en cualquier momento sin penalizaciones, donde se especifique claramente las causas de dicha cancelación.</li>
+            <li>Seguridad y protección de datos: la empresa se asegura de cumplir con los estándares de seguridad y privacidad de datos, comunicando claramente las políticas de privacidad asociadas con el uso del software.</li>
+            <li>Contratos y acuerdos legales: Se redactará un contrato de licencia que especifique todos los términos y condiciones de uso, restricciones, responsabilidades y derechos tanto del proveedor como del usuario del software.</li>
+          </ul>
+        </body>
+      </html>
+    "></iframe>
+      <label for="terminos">Acepto los términos y condiciones:</label>
+      <input type="checkbox" id="terminos" name="terminos" required>
+
+      <input type="submit" value="Enviar Contrato">
+    </form>
+  </div>
+</body>
+</html>
